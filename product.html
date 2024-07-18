@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Book Paradise Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <div class="container">
+            <!-- Start NavBar -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo-red">BookParadise</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Navbar -->
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start All Products -->
+    <div class="featured">
+        <div class="small container">
+            <div class="row row-2">
+                <h1>All Products</h1>
+                <!-- Seacrh filter -->
+                <input type="text" id="search" onkeyup="filter()" placeholder="Search Here">
+                 <!--Sort Filter  -->
+                 <button onclick="sortList()" class="sortbtn">Sort By Price</button>
+            </div>
+            <div class="row" id="product-list">
+            <div class="col-4" id="modal1" data-target="#modal1">
+                <img src="images/product-1.jpg">
+                <h4 class="product-name">HTML</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-4" id="modal2" data-target="#modal2">
+                <img src="images/product-2.jpg">
+                <h4 class="product-name">CSS</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-4" id="modal3" data-target="#modal3">
+                <img src="images/product-3.jpg">
+                <h4 class="product-name">JavaScript</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4" id="modal4" data-target="#modal4">
+                <img src="images/product-4.jpg">
+                <h4 class="product-name">Angular</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4" id="modal5" data-target="#modal5">
+                <img src="images/product-5.jpg">
+                <h4 class="product-name">Learning Programing Techniques</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$110.00</p>
+            </div>
+            <div class="col-4" id="modal6" data-target="#modal6">
+                <img src="images/product-6.jpg">
+                <h4 class="product-name">Improving Productivity</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4" id="modal7" data-target="#modal7">
+                <img src="images/product-7.jpg">
+                <h4 class="product-name">Modern Programing</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$95.00</p>
+            </div>
+            <div class="col-4" id="modal8" data-target="#modal8">
+                <img src="images/product-8.jpg">
+                <h4 class="product-name">Mindful Learning</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <p>$150.00</p>
+                </div>
+            </div>
+            </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#10137;</span>
+            </div>
+        </div>
+    </div>
+        <!-- End All Products -->
+
+    
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <a href="index.html" class="logo-white">BookParadise</a>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html" class="logo-white">BookParadise</a>
+                    <p> Your One Stop Shop for all your book needs</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - BookParadise</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+    
+    <!-- Start Modal -->
+    <div class="modal" id="modal1">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/product-1.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>HTML</h1>
+                        <h4>Price: $80</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/product-2.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>CSS</h1>
+                        <h4>Price: $30</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/product-3.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>JavaScript</h1>
+                        <h4>Price: $20</h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/product-4.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>HTML</h1>
+                        <h4>Price: $50</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row row-2">
+                    <div class="col-2">
+                        <img src="images/product-5.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>Learning Programming Techniques</h1>
+                        <h4>Price: $110</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row row2">
+                    <div class="col-2">
+                        <img src="images/product-6.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>Improving Productivity</h1>
+                        <h4>Price: $35</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal7">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row row2">
+                    <div class="col-2">
+                        <img src="images/product-7.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>Modern Programming</h1>
+                        <h4>Price: $95</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal8">
+        <div class="single-item">
+            <div class="small-container">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="row row2">
+                    <div class="col-2">
+                        <img src="images/product-8.jpg" width="100%"/>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Books</p>
+                        <h1>Mindful Learning</h1>
+                        <h4>Price: $150</h4>
+                        <h4>Quantity: </h4>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <br>
+                        <a href="" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- End Modal -->
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
